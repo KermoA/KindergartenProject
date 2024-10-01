@@ -43,5 +43,16 @@ namespace KindergartenProject.ApplicationServices.Services
 
 			return domain;
 		}
+
+		public async Task<Kindergarten> Delete(Guid id)
+		{
+			var kindergarten = await _context.Kindergartens
+				.FirstOrDefaultAsync(x => x.Id == id);
+
+			_context.Kindergartens.Remove(kindergarten);
+			await _context.SaveChangesAsync();
+
+			return kindergarten;
+		}
 	}
 }

@@ -7,5 +7,6 @@ namespace KindergartenProject.Core.ServiceInterface
 	{
 		Task<Kindergarten> DetailAsync(Guid id);
 		Task<Kindergarten> Update(KindergartenDto dto);
+		Task<Kindergarten> Delete(Guid id);
 	}
 }
