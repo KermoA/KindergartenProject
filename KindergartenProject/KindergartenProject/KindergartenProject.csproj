@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KindergartenProject.ApplicationServices\KindergartenProject.ApplicationServices.csproj" />
     <ProjectReference Include="..\KindergartenProject.Data\KindergartenProject.Data.csproj" />
   </ItemGroup>
 

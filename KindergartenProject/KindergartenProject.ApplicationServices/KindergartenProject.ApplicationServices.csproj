@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KindergartenProject.Core\KindergartenProject.Core.csproj" />
+    <ProjectReference Include="..\KindergartenProject.Data\KindergartenProject.Data.csproj" />
+  </ItemGroup>
+
 </Project>
