@@ -1,3 +1,6 @@
+using KindergartenProject.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace KindergartenProject
 {
 	public class Program
@@ -8,6 +11,9 @@ namespace KindergartenProject
 
 			// Add services to the container.
 			builder.Services.AddControllersWithViews();
+
+			builder.Services.AddDbContext<KindergartenProjectContext>(options =>
+				options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 			var app = builder.Build();
 
