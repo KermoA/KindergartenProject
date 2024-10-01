@@ -1,6 +1,6 @@
-﻿namespace KindergartenProject.Core.Dto
+﻿namespace KindergartenProject.Models.Kindergartens
 {
-	public class KindergartenDto
+	public class KindergartenCreateUpdateViewModel
 	{
 		public Guid? Id { get; set; }
 		public string GroupName { get; set; }
